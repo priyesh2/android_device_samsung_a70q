@@ -39,6 +39,9 @@
 /dev/block/bootdevice/by-name/system                    /                        ext4    ro,barrier=1,discard                                 wait,recoveryonly
 =======
 /dev/block/bootdevice/by-name/system                    /                        ext4    ro,barrier=1,discard                                 wait
+<<<<<<< HEAD
+>>>>>>> 23ce9a5... Remove product partition
+=======
 >>>>>>> 23ce9a5... Remove product partition
 /dev/block/bootdevice/by-name/vendor                    /vendor                  ext4    ro,barrier=1,discard                                 wait,recoveryonly
 /dev/block/bootdevice/by-name/cache                     /cache                   ext4    nosuid,noatime,nodev,barrier=1                       wait
