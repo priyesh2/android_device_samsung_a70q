@@ -167,7 +167,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml \
-    vendor/lineage/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:system/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
+  
 
 # Gatekeeper HAL
 PRODUCT_PACKAGES += \
@@ -224,9 +224,9 @@ PRODUCT_PACKAGES += \
     android.hardware.light@2.0-impl \
     lights.qcom
 
-# LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service.samsung-a70q
+#LiveDisplay
+#PRODUCT_PACKAGES += \
+    #vendor.lineage.livedisplay@2.0-service.samsung-a70q
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -367,9 +367,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     textclassifier.bundle1
 
-# Touchscreen
-PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.samsung \
+#Touchscreen
+#PRODUCT_PACKAGES += \
+ #vendor.lineage.touch@1.0-service.samsung \
     libtinyxml2
 
 # Trust HAL
