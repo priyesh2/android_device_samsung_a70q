@@ -4,4 +4,4 @@
 #
 
 add_lunch_combo lineage_a70q-eng
-add_lunch_combo lineage_a70q-userdebug
+add_lunch_combo aosip_a70q-userdebug

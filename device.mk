@@ -224,10 +224,6 @@ PRODUCT_PACKAGES += \
     android.hardware.light@2.0-impl \
     lights.qcom
 
-# LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service.samsung-a70q
-
 # Media
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
@@ -364,7 +360,6 @@ PRODUCT_PACKAGES += \
 
 # Touchscreen
 PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.samsung \
     libtinyxml2
 
 # Trust HAL
