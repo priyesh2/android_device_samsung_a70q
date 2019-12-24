@@ -217,6 +217,9 @@ TARGET_COPY_OUT_VENDOR := vendor
 
 TARGET_USES_MKE2FS := true
 
+# Power
+TARGET_TAP_TO_WAKE_NODE := "/proc/tp_gesture"
+
 # QCOM
 BOARD_USES_QCOM_HARDWARE := true
 

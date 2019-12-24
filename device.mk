@@ -152,7 +152,7 @@ PRODUCT_PACKAGES += \
 
 # Doze
 PRODUCT_PACKAGES += \
-    SamsungDoze
+    #SamsungDoze
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -167,7 +167,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml \
-    vendor/lineage/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:system/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
+    vendor/havoc/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:system/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
 
 # Gatekeeper HAL
 PRODUCT_PACKAGES += \
@@ -277,10 +277,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
+#Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.0-impl \
-    android.hardware.power@1.0-service \
-    power.qcom:64
+android.hardware.power@1.2-service.a70q
 
 # QCOM
 PRODUCT_COPY_FILES += \
@@ -374,7 +373,7 @@ PRODUCT_PACKAGES += \
 
 # Trust HAL
 PRODUCT_PACKAGES += \
-    vendor.lineage.trust@1.0-service
+    #vendor.lineage.trust@1.0-service
 
 # Vibrator
 PRODUCT_PACKAGES += \

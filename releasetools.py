@@ -27,7 +27,7 @@ def IncrementalOTA_InstallEnd(info):
 
 def AddBootloaderAssertion(info):
   cmd = 'assert(getprop("ro.boot.rp") == "3" || abort("ERROR: This package requires bootloeader from version 3 or newer. Please upgrade bootloader and retry!"););'
-  info.script.AppendExtra(cmd)
+  #info.script.AppendExtra(cmd)
 
 def AddImage(info, basename, dest):
   path = "IMAGES/" + basename
