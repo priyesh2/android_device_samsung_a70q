@@ -180,11 +180,6 @@ PRODUCT_PACKAGES += \
     libqcomfm_jni \
     qcom.fmradio
 
-#Keymaster 
-PRODUCT_PACKAGES += \
- android.hardware.keymaster@4.0-service \
- android.hardware.keymaster@4.0-impl \
-
 # GPS
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps/apdr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/apdr.conf \
