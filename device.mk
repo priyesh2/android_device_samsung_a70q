@@ -167,7 +167,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml \
-    vendor/havoc/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:system/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
+    vendor/aosip/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:system/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
 
 # Gatekeeper HAL
 PRODUCT_PACKAGES += \
@@ -368,8 +368,7 @@ PRODUCT_PACKAGES += \
 
 # Touchscreen
 PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.samsung \
-    libtinyxml2
+   libtinyxml2
 
 # Trust HAL
 PRODUCT_PACKAGES += \
