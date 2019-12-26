@@ -5,9 +5,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/havoc_a70q.mk
+    $(LOCAL_DIR)/aosip_a70q.mk
 
 COMMON_LUNCH_CHOICES := \
-    havoc_a70q-user \
-    havoc_a70q-userdebug \
-    havoc_a70q-eng
+   aosip_a70q-userdebug \
