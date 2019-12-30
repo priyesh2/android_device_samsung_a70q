@@ -212,7 +212,7 @@ PRODUCT_COPY_FILES += \
 
 #Keymaster 
 PRODUCT_PACKAGES += \
-ndroid.hardware.keymaster@4.0-service \
+android.hardware.keymaster@4.0-service \
 android.hardware.keymaster@4.0-impl \  
 
 # Keylayout
