@@ -1,3 +1,4 @@
+
 allow hal_perf_default init:dir search;
 allow hal_perf_default init:file { open read getattr };
 
@@ -12,3 +13,7 @@ allow hal_perf_default sysfs_batteryinfo:file { open read getattr };
 allow hal_perf_default proc_sched:file rw_file_perms;
 
 get_prop(hal_perf_default, sec_camera_prop)
+allow hal_perf_default init:dir { read search open };
+allow hal_perf_default kernel:dir { read search open };
+allow hal_perf_default system_server:dir { read search open };
+allow hal_perf_default system_server:file { read getattr open };
