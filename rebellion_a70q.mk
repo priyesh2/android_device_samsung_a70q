@@ -11,7 +11,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 # Inherit from a70q device
 $(call inherit-product, device/samsung/a70q/device.mk)
-7
+
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/rebellion/config/common.mk)
 
