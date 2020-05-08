@@ -22,7 +22,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.af.client_heap_size_kbyte=7168
 
 # Camera
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_PROPERTY_OVERRIDES += \ 
+    persist.vendor.camera.eis.enable=1 \
+    persist.vendor.camera.ois.disable=1 \
+    persist.vendor.camera.is_type=4 \
     camera.aux.packagelist="org.codeaurora.snapcam,com.android.camera,com.android.lightboxtest" \
     camera.disable_zsl_mode=1 \
     vendor.camera.aux.packagelist="org.codeaurora.snapcam,com.android.camera"
