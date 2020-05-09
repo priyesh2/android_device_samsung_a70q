@@ -216,11 +216,19 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/sec_touchscreen.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/sec_touchscreen.kl
 
+# Keymaster
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@4.0-service.samsung
+
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service \
     android.hardware.light@2.0-impl \
     lights.qcom
+
+# LiveDisplay
+PRODUCT_PACKAGES += \
+    vendor.lineage.livedisplay@2.0-service.samsung-a70q
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -363,11 +371,12 @@ PRODUCT_PACKAGES += \
 
 # Touchscreen
 PRODUCT_PACKAGES += \
+    vendor.lineage.touch@1.0-service.samsung \
     libtinyxml2
 
 # Trust HAL
-#PRODUCT_PACKAGES += \
-    #vendor.lineage.trust@1.0-service
+PRODUCT_PACKAGES += \
+    vendor.lineage.trust@1.0-service
 
 # Vibrator
 PRODUCT_PACKAGES += \
@@ -394,8 +403,3 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
     $(LOCAL_PATH)/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini
-
-#Keymaster
-PRODUCT_PACKAGES += \
- android.hardware.keymaster@4.0-service \
- android.hardware.keymaster@4.0-impl \
